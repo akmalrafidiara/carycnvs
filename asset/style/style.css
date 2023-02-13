@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
+  scroll-behavior:smooth
 }
 
 body {
@@ -64,8 +65,8 @@ body {
 }
 
 .gallery {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
