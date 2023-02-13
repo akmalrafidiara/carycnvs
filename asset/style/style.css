@@ -85,6 +85,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .gal-img img {
@@ -97,7 +98,6 @@ body {
 
 .gal-img img:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 10px #000;
 }
 
 .gallery .wide {
@@ -109,4 +109,33 @@ body {
 .gallery .big {
   grid-column: span 2;
   grid-row: span 2;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 100vh;
+  }
+  .banner-text h1 {
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-bottom: 5px;
+  }
+  .banner-text p {
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+  }
+  .banner-text a {
+    font-size: 12px;
+  }
+
+  .gallery {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .gal-img {
+    grid-column: span 1!important;
+    grid-row: span 2!important;
+  }
 }
